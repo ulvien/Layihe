@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- owl carousel cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>DirectList</title>
+</head>
+
+<body>
+    <div id="homePage">
+        <header>
+            <div id="myNavbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <!--Mobile nav-->
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="assets/logo-white.png" alt="">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-light navbar-toggler-icon">
+                                        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+
+                                    </span>
+                                </button>
+                                <!-- end of Mobile nav-->
+
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+
+                                        <li class="nav-item dropdown navActive">
+                                            <a class="nav-link" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Home<i class="fas fa-chevron-down"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" onclick="location.href='index.html'" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Home Version 1
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Home Version 2
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Listing <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        List Layout <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="">Width Sidebar</a>
+                                                        <a href="">Full Width</a>
+                                                        <a href="">Full Width + Map</a>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Grid Layout <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="grid.html">Width Sidebar</a>
+                                                        <a href="">Full Width</a>
+                                                        <a href="">Full Width + Map</a>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Half Screen Map <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="">Layout1</a>
+                                                        <a href="">Layout2</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Detail <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="">Version 1</a>
+                                                        <a href="">Version 2</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                User Panel<i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Dashboard
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Messages
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Bookings 
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Reviews 
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Bookmarks
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        My Listings
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Add List 
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Profile 
+                                                    </button>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pages<i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" onclick="location.href='pricing.html'" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       Pricing
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Invoice
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Booking
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       Add Listing
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Profile
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Blog <i class="fas fa-chevron-right"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="blog.html">Width Sidebar</a>
+                                                        <a href="">Full Width</a>
+                                                        <a href="">Full Width + Map</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        About
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Contact
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Session <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" onclick="location.href='login.html'" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Login
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Register
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Forgot Password
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Coming Soon
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <!--Button Adding-->
+                                    <div class="header-widget">
+                                        <a class="btn btn-neutral btn-icon btn-radius" href="#">
+                                            ADD LISTING
+                                            <i class="fa fa-plus"> </i>
+                                        </a>
+                                    </div>
+                                    <!--End of Adding-->
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="landing">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+
+                            <div class="text-holder">
+                                <h2 class="text-white">Find Nearby Attractions</h2>
+                                <h4 class="text-white">Expolore top-rated attractions, activities and more
+                                </h4>
+
+                                <div class="formwrapper">
+                                    <form class="form-inline">
+
+                                        <div class="form-group mb-2 main-search-item">
+
+                                            <input type="text" class="form-control-plaintext" placeholder="What are you looking for?">
+                                        </div>
+
+                                        <div class="form-group mb-2 main-search-item">
+                                            <input type="text" class="form-control-plaintext" placeholder="Location">
+                                            <div id="icon-href">
+                                                <a href="#">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="categorier">
+                                            <select class="selector" placeholder="All Categories">
+                                                <option>All Categories</option>
+                                                <option>Shops</option>
+                                                <option>Hotels</option>
+                                                <option>Restaurants</option>
+                                                <option>Fitness</option>
+                                                <option>Events</option>
+                                            </select>
+
+                                        </div>
+
+                                        <a class="btn main-search-btn btn-radius btn-lg btn-white" href="/listing/list/with-sidebar">
+                                            <span class="btn-inner-text">Search</span></a>
+                                    </form>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="slider">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="slide-header">
+                                <h2>
+                                    Popular Categories
+                                </h2>
+                                <p>Browse the most desirable categories</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 carouselwrap">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="myItem">
+                                        <img src="assets/cat-img-1.jpg" alt="">
+                                        <div class="overlay">
+                                            <i class="fas fa-bed"></i>
+                                            <h3>Hotels</h3>
+                                            <h5>64 listings</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="myItem">
+                                        <img src="assets/cat-img-2.jpg" alt="">
+                                        <div class="overlay">
+                                            <i class="fas fa-bed"></i>
+                                            <h3>Shops</h3>
+                                            <h5>14 listings</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="myItem">
+                                        <img src="assets/cat-img-3.jpg" alt="">
+                                        <div class="overlay">
+                                            <i class="fas fa-bed"></i>
+                                            <h3>Events</h3>
+                                            <h5>67 listings</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="myItem">
+                                        <img src="assets/cat-img-4.jpg" alt="">
+                                        <div class="overlay">
+                                            <i class="fas fa-bed"></i>
+                                            <h3>Fitness</h3>
+                                            <h5>27 listings</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="myItem">
+                                        <img src="assets/cat-img-5.jpg" alt="">
+                                        <div class="overlay">
+                                            <i class="fas fa-bed"></i>
+                                            <h3>Nightlife</h3>
+                                            <h5>22 listings</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="myItem">
+                                        <img src="assets/cat-img-6.jpg" alt="">
+                                        <div class="overlay">
+                                            <i class="fas fa-bed"></i>
+                                            <h3>Eat & Drink</h3>
+                                            <h5>127 listings</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="hearted-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slide-header">
+                                <h2>
+                                    Most Visited Places
+                                </h2>
+                                <p>Discover top-rated local businesses </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 forflow">
+
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="itemWrapper wr1">
+                                        <div class="logow">
+                                            <a class="round-img">
+                                                <img src="assets/logo-4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+
+                                            <a href="#" tabindex="0">
+                                                <h3>Donuts Hub </h3>
+                                            </a>
+                                            <p class="mb-0 text-muted">
+                                                56,Hihu Pora, New York
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-pill badge-primary text-uppercase category-banner">
+                                            Eat &amp; Drink
+                                        </span>
+                                        <span class="badge badge-pill badge-primary text-uppercase open-close-banner">
+                                            Open
+                                        </span>
+                                        <span class="round-pill like-banner d-block bg-primary h-wrap">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="itemWrapper wr2">
+                                        <div class="logow">
+                                            <a class="round-img">
+                                                <img src="assets/logo-1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+
+                                            <a href="#" tabindex="0">
+                                                <h3>NYC</h3>
+                                            </a>
+                                            <p class="mb-0 text-muted">
+                                                Mill Dee, New York
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-pill badge-primary text-uppercase category-banner">
+                                            Airport
+                                        </span>
+                                        <span class="badge badge-pill badge-primary text-uppercase open-close-banner">
+                                            Now Open
+                                        </span>
+                                        <span class="round-pill like-banner d-block bg-primary h-wrap">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="itemWrapper wr3">
+                                        <div class="logow">
+                                            <a class="round-img">
+                                                <img src="assets/logo-2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+
+                                            <a href="#" tabindex="0">
+                                                <h3>Groos Day </h3>
+                                            </a>
+                                            <p class="mb-0 text-muted">
+                                                71, Rowling Street, New York
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-pill badge-primary text-uppercase category-banner">
+                                            Eat &amp; Drink
+                                        </span>
+                                        <span class="badge badge-pill badge-primary text-uppercase open-close-banner">
+                                            Closed
+                                        </span>
+                                        <span class="round-pill like-banner d-block bg-primary h-wrap">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="itemWrapper wr4">
+                                        <div class="logow">
+                                            <a class="round-img">
+                                                <img src="assets/logo-1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+
+                                            <a href="#" tabindex="0">
+                                                <h3>Cafe Bar</h3>
+                                            </a>
+                                            <p class="mb-0 text-muted">
+                                                Wall Street, New York
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-pill badge-primary text-uppercase category-banner">
+                                            Eat &amp; Drink
+                                        </span>
+                                        <span class="badge badge-pill badge-primary text-uppercase open-close-banner">
+                                            Open
+                                        </span>
+                                        <span class="round-pill like-banner d-block bg-primary h-wrap">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="itemWrapper wr5">
+                                        <div class="logow">
+                                            <a class="round-img">
+                                                <img src="assets/logo-2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+
+                                            <a href="#" tabindex="0">
+                                                <h3>Milky Ducth </h3>
+                                            </a>
+                                            <p class="mb-0 text-muted">
+                                                MayLand Square, LA
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-pill badge-primary text-uppercase category-banner">
+                                            Concert
+                                        </span>
+                                        <span class="badge badge-pill badge-primary text-uppercase open-close-banner">
+                                            Coming soon
+                                        </span>
+                                        <span class="round-pill like-banner d-block bg-primary h-wrap">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="itemWrapper wr6">
+                                        <div class="logow">
+                                            <a class="round-img">
+                                                <img src="assets/logo-3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+
+                                            <a href="#" tabindex="0">
+                                                <h3>Maledy Hotels</h3>
+                                            </a>
+                                            <p class="mb-0 text-muted">
+                                                672,CreedWay, New York
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-pill badge-primary text-uppercase category-banner">
+                                            Hotels
+                                        </span>
+                                        <span class="badge badge-pill badge-primary text-uppercase open-close-banner">
+                                            Open
+                                        </span>
+                                        <span class="round-pill like-banner d-block bg-primary h-wrap">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="plan-vacation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7 mx-auto">
+                            <div class="box-header">
+                                <h2 class="head-line text-white">Plan The Vacation of Your Dreams
+                                </h2>
+                                <p class="text-white">Explore some of the best tips from around the world from our partners and friends. Discover some of the most popular listings in Sydney.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <div class="contenter">
+                                <div class="iconwrapper"><i class="fas fa-search"></i></div>
+                                <h5 class="text-white mt-3">
+                                    Find Interesting Place
+
+                                </h5>
+                                <p class="text-white mt-3">
+                                    Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus tellus ut, convallis eros sollicitudin turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div class="contenter">
+                                <div class="iconwrapper"><i class="fas fa-phone-square-alt"></i></div>
+                                <h5 class="text-white mt-3">
+                                    Contact a Few Owners
+
+                                </h5>
+                                <p class="text-white mt-3">
+                                    Maecenas pulvinar, risus in facilisis dignissim, quam nisi hendrerit nulla, id vestibulum metus nullam viverra porta purus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div class="contenter">
+                                <div class="iconwrapper"><i class="fas fa-user-plus"></i></div>
+                                <h5 class="text-white mt-3">
+                                    Make a Reservation
+
+                                </h5>
+                                <p class="text-white mt-3">
+                                    Faucibus ante, in porttitor tellus blandit et. Phasellus tincidunt metus lectus sollicitudin feugiat pharetra consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7 mx-auto">
+                            <div class="team-header row justify-content-center text-center">
+                                <h2>
+                                    The Amazing Team
+                                </h2>
+                                <p class="lead">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                            <div class="px-4">
+                                <img src="assets/thumb-1.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" alt="">
+                                <div class="pt-4 text-center">
+                                    <h5 class="title">
+                                        <span class="d-block mb-1">Ryan Tompson</span>
+                                        <small class="h6 text-muted">Web Developer</small>
+                                    </h5>
+                                    <div class="mt-3 btn-wrap">
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-facebook-f"></i>
+                                            </i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                            <div class="px-4">
+                                <img src="assets/thumb-2.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" alt="">
+                                <div class="pt-4 text-center">
+                                    <h5 class="title">
+                                        <span class="d-block mb-1">Romina Hadid</span>
+                                        <small class="h6 text-muted">Marketing Strategist</small>
+                                    </h5>
+                                    <div class="mt-3 btn-wrap">
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-facebook-f"></i>
+                                            </i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                            <div class="px-4">
+                                <img src="assets/thumb-3.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" alt="">
+                                <div class="pt-4 text-center">
+                                    <h5 class="title">
+                                        <span class="d-block mb-1">Alexander Smith</span>
+                                        <small class="h6 text-muted">UI/UX Designer</small>
+                                    </h5>
+                                    <div class="mt-3 btn-wrap">
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-facebook-f"></i>
+                                            </i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                            <div class="px-4">
+                                <img src="assets/thumb-4.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" alt="">
+                                <div class="pt-4 text-center">
+                                    <h5 class="title">
+                                        <span class="d-block mb-1">Ethan Moore</span>
+                                        <small class="h6 text-muted">Founder and CEO</small>
+                                    </h5>
+                                    <div class="mt-3 btn-wrap">
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-facebook-f"></i>
+                                            </i>
+                                        </a>
+                                        <a class="btn btn-success btn-icon-only rounded-circle">
+                                            <i class="fab fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blogger">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog-header">
+                                <h2>
+                                    Recent Blog
+                                </h2>
+                                <p>Hassel Free Service
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card  shadow border-0">
+                                <div class="card-img">
+                                    <img src="assets/post-1.jpg" alt="12" class="img-fluid">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5>Take a Look at Hotels for All Budgets
+                                    </h5>
+                                    <p class="text-muted">22 August 2018
+                                    </p>
+                                    <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis lorem. Pellentesque pellentesque</p>
+                                    <a class="btn btn-primary" routerlink="/pages/blog/detail" href="/pages/blog/detail">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-lift--hover shadow border-0">
+                                <img src="assets/post-2.jpg" alt="12" class="img-fluid">
+                                <div class="card-body">
+                                    <h5>The 50 Greatest Street Arts In London
+                                    </h5>
+                                    <p class="text-muted">22 August 2018
+
+
+                                    </p>
+                                    <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis lorem. Pellentesque pellentesque</p>
+                                    <a class="btn btn-primary" routerlink="/pages/blog/detail" href="/pages/blog/detail">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-lift--hover shadow border-0">
+                                <img src="assets/post-3.jpg" alt="12" class="img-fluid">
+                                <div class="card-body">
+                                    <h5>The Best Cofee Shops In Sydney Neighborhoods
+
+                                    </h5>
+                                    <p class="text-muted">22 August 2018
+
+
+                                    </p>
+                                    <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis lorem. Pellentesque pellentesque</p>
+                                    <a class="btn btn-primary" routerlink="/pages/blog/detail" href="/pages/blog/detail">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <div class="items">
+                                <div class="contenter">
+                                    <img src="assets/logo-white.png" alt="">
+                                    <br> <br>
+                                    <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
+
+                                    </p>
+                                </div>
+                                <div class="text-widget">
+                                    <span>12345 Little Lonsdale St, Melbourne</span> <br>
+
+                                    <span> Phone: (123) 123-456 </span> <br>
+                                    <span> E-Mail: <a href="#">office@example.com</a></span>
+                                    <div class="socialize">
+                                        <a href="#"><i class="fab fa-twitter"></i> </a>
+
+                                        <a href="#"><i class="fab fa-facebook-square"></i> </a>
+                                        <a href="#"><i class="fab fa-dribbble"></i> </a>
+                                        <a href="#"><i class="fab fa-github"></i> </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 ">
+                            <div class="foot-links">
+                                <ul>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Login</li>
+                                    </a>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Sign Up</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Forgot Password</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Add Listing</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Pricing</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>About</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3  col-sm-12">
+                            <div class="foot-links">
+                                <ul>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Profile</li>
+                                    </a>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Blog</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Invoice</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Booking</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Contact</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyrighter">
+                                <p>&copy;2019 DirectList. All Rights Reserved.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+        <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </div>
+</body>
+
+</html>

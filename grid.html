@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- owl carousel cdn  -->
+    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"> -->
+    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Grid Layout</title>
+</head>
+
+<body>
+    <div id="grids">
+        <header>
+            <div id="myNavbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <!--Mobile nav-->
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="assets/logo-white.png" alt="">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <!-- end of Mobile nav-->
+
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+
+                                        <li class="nav-item dropdown navActive">
+                                            <a class="nav-link" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Home<i class="fas fa-chevron-down"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" onclick="location.href='index.html'" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Home Version 1
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Home Version 2
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Listing <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        List Layout <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="">Width Sidebar</a>
+                                                        <a href="">Full Width</a>
+                                                        <a href="">Full Width + Map</a>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Grid Layout <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="grid.html">Width Sidebar</a>
+                                                        <a href="">Full Width</a>
+                                                        <a href="">Full Width + Map</a>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Half Screen Map <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="">Layout1</a>
+                                                        <a href="">Layout2</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Detail <i class="fas fa-chevron-right"></i>
+                                                    </button>
+
+                                                    <div class="dropdown-menu">
+                                                        <a href="">Version 1</a>
+                                                        <a href="">Version 2</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                User Panel<i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Dashboard
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Messages
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Bookings 
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Reviews 
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Bookmarks
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        My Listings
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Add List 
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Profile 
+                                                    </button>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pages<i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" onclick="location.href='pricing.html'" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       Pricing
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Invoice
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Booking
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       Add Listing
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Profile
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Blog <i class="fas fa-chevron-right"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="blog.html">Width Sidebar</a>
+                                                        <a href="">Full Width</a>
+                                                        <a href="">Full Width + Map</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        About
+                                                    </button>
+                                                </div>
+
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Contact
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Session <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" onclick="location.href='login.html'" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Login
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Register
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Forgot Password
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Coming Soon
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <!--Button Adding-->
+                                    <div class="header-widget">
+                                        <a class="btn btn-neutral btn-icon btn-radius" href="#">
+                                            ADD LISTING
+                                            <i class="fa fa-plus"> </i>
+                                        </a>
+                                    </div>
+                                    <!--End of Adding-->
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="girl-heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <div class="contentwrapper">
+                                <h2>Grid Layout With Sidebar</h2>
+                                <p>Explore New Places</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <nav id="breadcrumbs">
+                                <ul>
+                                    <li>Home</li>
+                                    <i class="fas fa-angle-right"></i>
+                                    <li>Listings</li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-grid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row mb-4">
+                                <div class="sorting">
+                                    <select class="custom-select" id="validationTooltip04" required>
+                                        <option selected disabled value="">Default Order</option>
+                                        <option>Highest Rated</option>
+                                        <option>Most Reviewed</option>
+                                        <option>Newest Listings</option>
+                                        <option>Oldest Listings</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 grid-layout-list">
+                                    <div class="grid-items">
+                                        <div class="listing-item">
+                                            <a href="#">
+                                                <img src="assets/most-img-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="gridcontentwrap">
+                                            <span class="badge badge-pill">
+                                                EAT & DRINK
+                                            </span>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="num-rate">
+                                                (12 reviews)
+                                            </span>
+                                            <h3>Tom Restaurant</h3>
+                                            <span><small> 964 School Street, New York</small></span>
+                                            <span class="round-pill like-banner d-block">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 grid-layout-list">
+                                    <div class="grid-items">
+                                        <div class="listing-item">
+                                            <a href="#">
+                                                <img src="assets/most-img-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="gridcontentwrap">
+                                            <span class="badge badge-pill">
+                                                EVENTS
+                                            </span>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="num-rate">
+                                                (12 reviews)
+                                            </span>
+                                            <h3>Sticky Band
+                                            </h3>
+                                            <span><small>Bishop Avenue, New York</small></span>
+                                            <span class="round-pill like-banner d-block">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 grid-layout-list">
+                                    <div class="grid-items">
+                                        <div class="listing-item">
+                                            <a href="#">
+                                                <img src="assets/most-img-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="gridcontentwrap">
+                                            <span class="badge badge-pill">
+                                               HOTELS
+                                            </span>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="num-rate">
+                                                (12 reviews)
+                                            </span>
+                                            <h3>Hotel Govendor
+                                            </h3>
+                                            <span><small> 778 Country Street, New York</small></span>
+                                            <span class="round-pill like-banner d-block">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 grid-layout-list">
+                                    <div class="grid-items">
+                                        <div class="listing-item">
+                                            <a href="#">
+                                                <img src="assets/most-img-4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="gridcontentwrap">
+                                            <span class="badge badge-pill">
+                                                EAT & DRINK
+                                            </span>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="num-rate">
+                                                (12 reviews)
+                                            </span>
+                                            <h3>Burger House
+                                            </h3>
+                                            <span><small> 2726 Shinn Street, New York</small></span>
+                                            <span class="round-pill like-banner d-block">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 grid-layout-list">
+                                    <div class="grid-items">
+                                        <div class="listing-item">
+                                            <a href="#">
+                                                <img src="assets/most-img-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="gridcontentwrap">
+                                            <span class="badge badge-pill">
+                                                AIRPORT
+                                            </span>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="num-rate">
+                                                (12 reviews)
+                                            </span>
+                                            <h3>Burger House
+                                            </h3>
+                                            <span><small> 1512 Duncan Avenue, New York</small></span>
+                                            <span class="round-pill like-banner d-block">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 grid-layout-list">
+                                    <div class="grid-items">
+                                        <div class="listing-item">
+                                            <a href="#">
+                                                <img src="assets/most-img-6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="gridcontentwrap">
+                                            <span class="badge badge-pill">
+                                                EAT & DRINK
+                                            </span>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="num-rate">
+                                                (12 reviews)
+                                            </span>
+                                            <h3>Think Coffee
+                                            </h3>
+                                            <span><small>215 Terry Lane, New York</small></span>
+                                            <span class="round-pill like-banner d-block">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mt-3">
+                                        <nav class="pagenav">
+                                            <ul class="pagination">
+                                                <li class="page-item"><a class="page-lik" href="#"><i class="fas fa-chevron-left"></i></a class="page-lik"></li class="page-item">
+                                                <li class="page-item"><a class="page-lik" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-lik" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-lik" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-lik" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-lik" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-lik" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                            </ul>
+
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-4">
+
+                            <div class="sidebar">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="form-group">
+                                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="form-group">
+                                            <select class="form-control text-muted form-control-alternative custom-select" id="exampleFormControlSelect1">
+                                                <option>Hotels</option>
+                                                <option>Bars</option>
+                                                <option>Food Courts</option>
+                                                <option>Events</option>
+                                                <option>Cafe Bar</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="customRange1">Area Range</label>
+                                            <input type="range" class="custom-range" id="customRange1">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary" type="button">SEARCH</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 text-center">
+                                        <div class="thewidget">
+                                            <img src="assets/logo-white.png" alt="">
+                                            <p class="text-white mb-0">Don't Miss</p>
+                                            <h4 class="text-white">Exclusive Offers From DirectList</h4>
+                                            <div class="form-group">
+                                                <input class="form-control form-control-alternative" placeholder="Email" type="text">
+                                                <button class="btn btn-primary" type="button">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <div class="items">
+                                <div class="contenter">
+                                    <img src="assets/logo-white.png" alt="">
+                                    <br> <br>
+                                    <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
+
+                                    </p>
+                                </div>
+                                <div class="text-widget">
+                                    <span>12345 Little Lonsdale St, Melbourne</span> <br>
+
+                                    <span> Phone: (123) 123-456 </span> <br>
+                                    <span> E-Mail: <a href="#">office@example.com</a></span>
+                                    <div class="socialize">
+                                        <a href="#"><i class="fab fa-twitter"></i> </a>
+
+                                        <a href="#"><i class="fab fa-facebook-square"></i> </a>
+                                        <a href="#"><i class="fab fa-dribbble"></i> </a>
+                                        <a href="#"><i class="fab fa-github"></i> </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 ">
+                            <div class="foot-links">
+                                <ul>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Login</li>
+                                    </a>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Sign Up</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Forgot Password</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Add Listing</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Pricing</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>About</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3  col-sm-12">
+                            <div class="foot-links">
+                                <ul>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Profile</li>
+                                    </a>
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Blog</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Invoice</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Booking</li>
+                                    </a>
+
+                                    <a href="#"><i class="fas fa-angle-right"></i>
+                                        <li>Contact</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyrighter">
+                                <p>&copy;2019 DirectList. All Rights Reserved.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+        <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </div>
+</body>
+
+</html>

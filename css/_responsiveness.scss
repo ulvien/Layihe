@@ -1,0 +1,97 @@
+                        @media only screen and (max-width: 1200px) {
+                            .nav-link {
+                                i {
+                                    padding-left: 7px;
+                                    font-size: 10px !important;
+                                }
+                                color: white;
+                                padding: 5px 8px !important;
+                                font-size: 16px;
+                                &:hover {
+                                    color: $nav-item-hover;
+                                }
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 992px) {
+                            #homePage {
+                                #team {
+                                    .px-4 {
+                                        img {
+                                            margin: 0 auto;
+                                            display: block;
+                                            height: 200px !important;
+                                            width: 200px !important;
+                                        }
+                                    }
+                                }
+                                #landing {
+                                    height: 720px !important;
+                                    .overlay {
+                                        height: 720px !important;
+                                    }
+                                    .formwrapper {
+                                        margin: 0 auto;
+                                        max-height: unset !important;
+                                        border-radius: unset !important;
+                                        .form-inline>* {
+                                            position: relative;
+                                            display: inline-block;
+                                            width: 100%;
+                                            border: 0;
+                                            background: rgba(255, 255, 255, .1);
+                                        }
+                                        .form-inline {
+                                            input[type="text"] {
+                                                background-color: rgba(0, 0, 0, 0.068) !important;
+                                                display: block;
+                                            }
+                                            .categorier {
+                                                border: none;
+                                                height: 44px;
+                                                box-shadow: none;
+                                                overflow: hidden;
+                                                background-color: rgba(255, 255, 255, 0.068) !important;
+                                                margin-bottom: 10px;
+                                                margin-top: 4px;
+                                                .selector {
+                                                    border: unset;
+                                                    color: #8898aa;
+                                                    width: 100%;
+                                                    padding: 0px 28px 0 26px;
+                                                    height: 44px;
+                                                    -webkit-appearance: none;
+                                                    -moz-appearance: none;
+                                                    &::placeholder {
+                                                        background-color: rgba(214, 14, 14, 0.883) !important;
+                                                    }
+                                                    &:focus {
+                                                        outline: none;
+                                                    }
+                                                }
+                                            }
+                                            .main-search-btn {
+                                                margin-top: 5px;
+                                                margin-right: 0px !important;
+                                            }
+                                            #icon-href {
+                                                position: relative;
+                                                font-size: 14px;
+                                                width: 0px;
+                                                height: 0px;
+                                                left: 100% !important;
+                                                top: -22px !important;
+                                                .fa-map-marker-alt {
+                                                    position: absolute;
+                                                    color: #fff;
+                                                    padding: 10px;
+                                                    &:hover {
+                                                        color: #66676b;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
